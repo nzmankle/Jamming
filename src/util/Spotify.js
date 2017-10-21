@@ -63,7 +63,8 @@ export const Spotify = {
 
 
   savePlaylist(playlistName, playlistTracks) {
-    this.getAccessToken();
+    //get token
+    const token = this.getAccessToken();
 
     let userId;
     let playlistId;
