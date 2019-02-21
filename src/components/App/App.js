@@ -52,12 +52,14 @@ class App extends React.Component {
     //make copy of playlistTracks
     let playlistTracks = this.state.playlistTracks;
 
+    // TODO: check out the filter function here
+    playlistTracks = playlistTracks.filter(x => x.id !== track.id);
     //find the id of the track to remove and remove it
-    for (let i = 0; i < playlistTracks.length; i++) {
+    /*for (let i = 0; i < playlistTracks.length; i++) {
       if (playlistTracks[i].id === track.id) {
         playlistTracks.splice(i, 1);
       }
-    };
+    };*/
 
     //update state
     this.setState({
