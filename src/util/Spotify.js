@@ -37,7 +37,6 @@ export const Spotify = {
     const token = this.getAccessToken();
 
     //check there is a token
-    console.log('got this far');
     const url = `https://api.spotify.com/v1/search?type=track&q=${searchTerm}`;
 
     return fetch(url, {
